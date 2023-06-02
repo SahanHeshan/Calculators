@@ -1,0 +1,16 @@
+.nav-s-1{
+    margin: 50% 0% 50% 0%;
+    width:50%;
+    background-image: (black,green);
+}
+
+.btn-size1{
+    margin-bottom: 5%;
+    min-width: 15%;
+    
+}
+.card{
+    border-radius: 5%;
+    padding: 5% 10%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
