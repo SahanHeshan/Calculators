@@ -40,6 +40,7 @@ function get1(a,b,c){
         case '/':
             if (b==0){
                 alert("Division By 0 NOT ALLOWED")
+                return x.innerHTML=('Invalid !')
                 break;
             }
             else{
@@ -51,6 +52,7 @@ function get1(a,b,c){
         case 'mod':
             if (b==0){
                 alert("Division By 0 NOT ALLOWED")
+                return x.innerHTML=('Invalid !')
                 break;
             }
             else{

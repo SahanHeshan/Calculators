@@ -9,7 +9,14 @@
             crossorigin="anonymous">
         <style>
             .btn-size1{
-                width:15%   
+                margin-bottom: 5%;
+                min-width: 15%;
+                
+            }
+            .card{
+                border-radius: 5%;
+                padding: 5% 10%;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
         </style>
     </head>
@@ -22,21 +29,21 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card mt-5">
+                    <div class="card shadw-t1 mt-5">
                         <div class="card-header bg-primary text-white d-flex justify-content-center">
                             <h1>Calculator</h1>
                             </br>
                         </div>
                         <div class="card-body">    
                             <label for="num1" class="form-label">First Number</label>
-                            <input type="number" id="num1" class="form-control">
+                            <input type="number" value=0 id="num1" class="form-control">
                             </br>
                         
                             <label for="num2" class="form-label">Second Number</label>
-                            <input type="number" id="num2" class="form-control">
+                            <input type="number" value=0 id="num2" class="form-control">
                             </br>
 
-                            <div class="justify-content-center">
+                            <div class="flex-box justify-content-center">
                                 <button type="submit" value="+" id="+" onclick="get1(document.getElementById('num1').value,
                                 document.getElementById('num2').value,document.getElementById('+').value)" class="btn btn-primary btn-size1">+</button>
                                 <button type="submit" value="-" id="-" onclick="get1(document.getElementById('num1').value,
