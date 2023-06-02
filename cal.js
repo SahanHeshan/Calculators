@@ -4,8 +4,7 @@ function get1(a,b,c){
     let x = document.getElementById("result");
  
     function add(a,b){ 
-        return x.innerHTML=(parseFloat(a)+parseFloat(b))
-        
+        return x.innerHTML=(parseFloat(a)+parseFloat(b))  
     }
     
     function sub(a,b){
@@ -14,12 +13,10 @@ function get1(a,b,c){
     
     function multi(a,b){
         return x.innerHTML=(a*b)
-    
     }
     
     function div(a,b){
         return x.innerHTML=(a/b)
-    
     }
     
     function percent(a,b){
@@ -60,6 +57,5 @@ function get1(a,b,c){
                 break;
             }    
         default: alert("Invalid Input");
-    }
-    
+    }   
 }
