@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Area of a Triang</title>
+        <title>Pythagorean theorem</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -10,9 +10,9 @@
         <link href="style.css" rel="stylesheet">
         
         <style>
-            .navbar-nav a, .navbar-nav a:hover{color: rgb(127, 13, 221);}
-            .navbar-nav a.active:hover{color: white}
-            .navbar-nav a.active, .navbar-toggler-1, div.theme{background-color: rgb(127, 13, 221);}
+            .navbar-nav a, .navbar-nav a:hover{color: rgb(13, 27, 221);}
+            .navbar-nav a.active:hover, .theme:hover{color: white}
+            .navbar-nav a.active, .navbar-toggler-1, .theme{background-color: rgb(13, 27, 221);color:white;}
         </style>
         
     </head>
@@ -33,8 +33,8 @@
                       <a class="nav-link " href="Age cal.html">Age Cal</a>
                       <a class="nav-link" href="Circle.html">Circle</a>
                       <a class="nav-link" href="Cylinder.html">Cylinder</a>
-                      <a class="nav-link" href="Pythogorean Cal.html">Pythogorean Cal</a>
-                      <a class="nav-link active" href="Triangle.html">Triangle</a>
+                      <a class="nav-link active" href="Pythogorean Cal.html">Pythogorean Cal</a>
+                      <a class="nav-link" href="Triangle.html">Triangle</a>
                     </div>
                   </div>
                 </div>
@@ -51,38 +51,26 @@
                     <div class="col-md-6">
                         <div class="card shadw-t1 mt-5">
                             <div class="card-header theme text-white d-flex justify-content-center">
-                                <h1>Area of a Triangle</h1>
+                                <h1>Pythagorean theorem</h1>
                                 </br>
                             </div>
                             <div class="card-body">    
-                                <label for="num1" class="form-label">First Number</label>
+                                <label for="num1" class="form-label">Leg 1</label>
                                 <input type="number" value=0 id="num1" class="form-control">
                                 </br>
                             
-                                <label for="num2" class="form-label">Second Number</label>
+                                <label for="num2" class="form-label">Leg 2</label>
                                 <input type="number" value=0 id="num2" class="form-control">
                                 </br>
     
-                                <!--need to simplify more-->
+                              
                                 <div class="flex-box justify-content-center">
-                                    <button type="submit" value="+" id="+" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('+').value)" class="btn btn-primary btn-size1">+</button>
-                                    <button type="submit" value="-" id="-" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('-').value)" class="btn btn-primary btn-size1">-</button>
-                                    <button type="submit" value="*" id="*" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('*').value)" class="btn btn-primary btn-size1">*</button>
-                                    <button type="submit" value="/" id="/" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('/').value)" class="btn btn-primary btn-size1">/</button>
-                                    <button type="submit" value="%" id="%" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('%').value)" class="btn btn-primary btn-size1">%</button>
-                                    <button type="submit" value="mod" id="mod" onclick="get1(document.getElementById('num1').value,
-                                    document.getElementById('num2').value,document.getElementById('mod').value)" class="btn btn-primary btn-size1">mod</button>
-                                    </div>
-                                    
+                                    <div class="flex-box justify-content-center">
+                                        <button type="submit" value="btn" id="btn" onclick="get1(document.getElementById('num1').value,
+                                        document.getElementById('num2').value)" class="btn theme btn-size2">Calculate</button>
+                                    </div>   
                                 </br>
-                                </br>
-                                </br>
-                                <label for="result" class="form-label">Result</label>
+                                <label for="result" class="form-label">Leg 3</label>
                                 <output type="number" id="result" class="form-control">
                             </div>
                         </div>
@@ -101,6 +89,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
             crossorigin="anonymous">
     </script>
-    <script src="cal.js">
+    <script src="pythog cal.js">
     </script>
 </html>
