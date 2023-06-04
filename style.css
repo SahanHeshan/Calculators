@@ -1,13 +1,36 @@
-.nav-s-1{
-    margin: 50% 0% 50% 0%;
-    width:50%;
-    background-image: (black,green);
+.navbar-nav a{
+    font-weight: 600;
+    text-align:center;
+    margin: 1px;
+    padding: 0.8rem;
+    border-radius: 1vmin ;
+}
+.navbar-nav a:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar-nav a.active{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+}
+.navbar-nav a.active{
+    color: white; 
+}
+
+@media (max-width: 576px){
+.navbar-toggler-1{ 
+    color: white;
+    padding: 3%;  
+    border: transparent;
+    border-radius: 5px;
+}
 }
 
 .btn-size1{
     margin-bottom: 5%;
-    min-width: 15%;
-    
+    min-width: 15%;   
+}
+.btn-size2{
+    margin-bottom: 5%;
+    min-width: 100%;   
 }
 .card{
     border-radius: 5%;

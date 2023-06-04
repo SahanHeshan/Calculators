@@ -1,6 +1,5 @@
 function get1(a,b,c){
 
-    let d
     let x = document.getElementById("result");
  
     function add(a,b){ 
